@@ -91,6 +91,30 @@ class War {
     return someDamageHappens
   }
 
+   // ------------------- I tried the following refactoring but it doesn't work
+
+  // armyAttack(attackerArmy, attackedArmy) {
+  //   let numberOfAttackers = attackerArmy.length;
+  //   let numberOfAttacked = attackedArmy.length;
+
+  //   let randomAttackerIndex = Math.floor(numberOfAttackers*Math.random());
+  //   let randomAttackedIndex = Math.floor(numberOfAttacked*Math.random());
+  //   console.log(attackedArmy)
+  //   let someDamageHappens = attackedArmy[randomAttackedIndex].receiveDamage(attackerArmy[randomAttackerIndex].strength)
+  //   attackedArmy = attackedArmy.filter((soldier) => soldier.health > 0)
+  //   console.log(attackedArmy)
+
+  //   return someDamageHappens;
+  // }
+
+  // saxonAttack() {
+  //   return this.armyAttack(this.saxonArmy, this.vikingArmy)
+  // }
+
+  // vikingAttack() {
+  //   return this.armyAttack(this.vikingArmy, this.saxonArmy)
+  // }
+
   showStatus() {
     if (this.saxonArmy.length === 0) {
       return 'Vikings have won the war of the century!';
